@@ -2,7 +2,7 @@ from sql_connection import get_sql_connection
 
 def get_all_products(connection):
     cursor = connection.cursor()
-    query = ("SELECT products.product_id, products.product_name, products.uom_id, products.price_per_Unit, uom.uom_name "
+    query = ("SELECT products.product_id, products.product_name, products.uom_id, products.price_per_unit, uom.uom_name "
             "FROM electronic_store.products INNER JOIN uom on products.uom_id=uom.uom_id")
     cursor.execute(query)
     
