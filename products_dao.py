@@ -44,4 +44,4 @@ if __name__=='__main__':
         'price_per_unit': '60'
     }))"""
     
-    print(delete_product(connection, 115))
+    #print(delete_product(connection, 115))
